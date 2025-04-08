@@ -9,7 +9,6 @@ const server = new McpServer({
   description: "Real-time stock data provider via MCP"
 });
 
-// Fixed tool registration with proper Zod schema format
 server.tool(
   "get-stock-data",
   {
@@ -51,7 +50,6 @@ server.tool(
   }
 );
 
-// Help tool with proper empty schema
 server.tool(
   "help",
   {},
