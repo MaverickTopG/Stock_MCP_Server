@@ -45,20 +45,6 @@ node stock-data-client.js
      "currency": "USD"
    }
    ~~~
-
-2. **help**  
-   Get documentation about available tools and usage instructions.
-
-   ~~~javascript
-   // Example response
-   {
-     "content": [{
-       "type": "text",
-       "text": "Available tools:\n1. get-stock-data - Retrieve real-time stock prices..."
-     }]
-   }
-   ~~~
-
 ## Example Client Usage
 
 ~~~javascript
