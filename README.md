@@ -2,6 +2,8 @@
 
 An AI-powered financial data provider that delivers real-time stock market information through the Model Context Protocol (MCP). This tool enables AI systems to retrieve live prices, trading volumes, and market data directly from Alpha Vantage.
 
+It is also certified by MCP Review : https://mcpreview.com/mcp-servers/MaverickTopG/Stock_MCP_Server 
+
 ## Features
 
 - 📈 **Real-Time Market Data**: Access minute-by-minute stock prices and volumes  
