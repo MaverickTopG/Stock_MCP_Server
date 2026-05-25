@@ -58,7 +58,7 @@ server.tool(
       type: "text",
       text: `Available tools:
 1. get-stock-data - Retrieve real-time stock prices
-   Parameters: symbol (string, default: AAPL)`
+   Parameters: symbol (string; default: AAPL)`
     }]
   })
 );
