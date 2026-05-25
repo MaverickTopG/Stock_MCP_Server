@@ -98,3 +98,5 @@ console.log(`Current AAPL price: $${response.data.price}`);
 - Historical price analysis tools  
 - Earnings report integration  
 - Market alert systems
+
+Valley Forge drill note: README-only wording update for advisory shadow validation.
