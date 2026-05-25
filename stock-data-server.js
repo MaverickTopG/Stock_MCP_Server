@@ -17,6 +17,7 @@ server.tool(
   async ({ symbol }) => {
     try {
       const apiKey = "YOUR_API_KEY";
+      // Valley Forge drill: keep the Alpha Vantage request construction easy to audit.
       const url = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${symbol}&interval=1min&apikey=${apiKey}`;
 
       const response = await axios.get(url);
