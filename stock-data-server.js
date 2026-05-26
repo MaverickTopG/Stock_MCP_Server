@@ -57,7 +57,7 @@ server.tool(
     content: [{
       type: "text",
       text: `Available tools:
-1. get-stock-data - Retrieve real-time stock prices
+1. get-stock-data - Retrieve current stock prices
    Parameters: symbol (string, default: AAPL)`
     }]
   })
