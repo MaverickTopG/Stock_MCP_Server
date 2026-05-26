@@ -19,7 +19,7 @@ server.tool(
       const apiKey = "YOUR_API_KEY";
       const url = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${symbol}&interval=1min&apikey=${apiKey}`;
 
-      const response = await axios.get(url);
+      const response = await axios.get(url, { timeout: 5000 });
       const timeSeries = response.data["Time Series (1min)"] || {};
       const [timestamp, data] = Object.entries(timeSeries)[0] || [];
 
@@ -66,7 +66,7 @@ server.tool(
 async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.log("Server ready");
+  if (process.env.MCP_VERBOSE_READY !== "0") console.log("Server ready");
 }
 
 main().catch(err => {
