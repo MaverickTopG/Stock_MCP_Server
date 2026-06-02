@@ -17,7 +17,7 @@ server.tool(
   async ({ symbol }) => {
     try {
       const apiKey = "YOUR_API_KEY";
-      const url = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${symbol}&interval=1min&apikey=${apiKey}`;
+      const url = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${symbol}&interval=5min&apikey=${apiKey}`;
 
       const response = await axios.get(url);
       const timeSeries = response.data["Time Series (1min)"] || {};
@@ -66,7 +66,7 @@ server.tool(
 async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.log("Server ready");
+  console.log("Server ready for 5-minute price requests");
 }
 
 main().catch(err => {
