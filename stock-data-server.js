@@ -17,7 +17,7 @@ server.tool(
   async ({ symbol }) => {
     try {
       const apiKey = "YOUR_API_KEY";
-      const url = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${symbol}&interval=1min&apikey=${apiKey}`;
+      const url = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${symbol}&interval=5min&apikey=${apiKey}`;
 
       const response = await axios.get(url);
       const timeSeries = response.data["Time Series (1min)"] || {};
