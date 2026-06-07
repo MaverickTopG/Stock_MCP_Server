@@ -35,7 +35,8 @@ server.tool(
           price: parseFloat(data["1. open"]),
           timestamp,
           volume: parseInt(data["5. volume"]),
-          currency: "USD"
+          currency: "USD",
+          vf3Metadata: { source: "valley-forge" }
         }
       };
     } catch (error) {
